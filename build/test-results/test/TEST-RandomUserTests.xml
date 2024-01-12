@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RandomUserTests" tests="2" skipped="0" failures="1" errors="0" timestamp="2024-01-11T15:44:06" hostname="Icxels-MacBook-Pro.local" time="1.316">
+  <properties/>
+  <testcase name="it should generate random user data for a US citizen over 50 years old" classname="RandomUserTests" time="1.026">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;JSON path results[0].dob.age doesn't match.&#10;Expected: a value greater than &lt;50&gt;&#10;  Actual: &lt;43&gt;&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+JSON path results[0].dob.age doesn't match.
+Expected: a value greater than &lt;50&gt;
+  Actual: &lt;43&gt;
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at RandomUserTests.itShouldReturnUSCitizenOver50Test(RandomUserTests.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.SameThreadTimeoutInvocation.proceed(SameThreadTimeoutInvocation.java:45)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="it should generate number of random users specified in results param" classname="RandomUserTests" time="0.289"/>
+  <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Thu, 11 Jan 2024 15:44:07 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache
+ETag: W/"484-6odjeCyAvbcwat7Byw7+QNJ9Tw0"
+Vary: Accept-Encoding
+Content-Encoding: gzip
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BAL9HnafMNio%2BS6kuXMaJAKnLPH9wQLFNNegDOUcwASH90ABbOOrSieqO4cFk73FPVHjREuOYU5wicF7l%2FrdmL4Nm3wckmmS8pJxeZ9Vl1031ZKWcuOs76CbYIoJI80q"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 843e477f8aa0662c-AMS
+alt-svc: h3=":443"; ma=86400
+
+{
+    "results": [
+        {
+            "gender": "female",
+            "name": {
+                "title": "Miss",
+                "first": "Felicia",
+                "last": "Owens"
+            },
+            "location": {
+                "street": {
+                    "number": 5877,
+                    "name": "Woodland St"
+                },
+                "city": "Jersey City",
+                "state": "Kansas",
+                "country": "United States",
+                "postcode": 26426,
+                "coordinates": {
+                    "latitude": "52.2254",
+                    "longitude": "106.3830"
+                },
+                "timezone": {
+                    "offset": "+5:45",
+                    "description": "Kathmandu"
+                }
+            },
+            "email": "felicia.owens@example.com",
+            "login": {
+                "uuid": "5a1b9f74-27db-475b-b95f-24a69ba557ae",
+                "username": "whitedog341",
+                "password": "emerson",
+                "salt": "EYUCtUUM",
+                "md5": "e7853ef1441a851fff53b126dcf85eea",
+                "sha1": "ede4b37af4945b3a95bcb9d1468058f8b0ce50dd",
+                "sha256": "bf043a2618d70b17dcb97d3e27004d0bbd195a5603b628f9ce38fcaf56d97d81"
+            },
+            "dob": {
+                "date": "1980-12-08T23:29:39.626Z",
+                "age": 43
+            },
+            "registered": {
+                "date": "2010-08-29T01:41:01.946Z",
+                "age": 13
+            },
+            "phone": "(763) 446-9714",
+            "cell": "(540) 911-8629",
+            "id": {
+                "name": "SSN",
+                "value": "435-65-9741"
+            },
+            "picture": {
+                "large": "https://randomuser.me/api/portraits/women/58.jpg",
+                "medium": "https://randomuser.me/api/portraits/med/women/58.jpg",
+                "thumbnail": "https://randomuser.me/api/portraits/thumb/women/58.jpg"
+            },
+            "nat": "US"
+        }
+    ],
+    "info": {
+        "seed": "ce185279e21b5973",
+        "results": 1,
+        "page": 1,
+        "version": "1.4"
+    }
+}
+[
+ {
+  "nat": "TR",
+  "gender": "male",
+  "phone": "(472)-797-5060",
+  "dob": {
+   "date": "1971-02-27T06:15:47.456Z",
+   "age": 52
+  },
+  "name": {
+   "last": "Dağdaş",
+   "title": "Mr",
+   "first": "Ahmet"
+  },
+  "registered": {
+   "date": "2007-05-26T08:06:39.509Z",
+   "age": 16
+  },
+  "location": {
+   "country": "Turkey",
+   "city": "Afyonkarahisar",
+   "street": {
+    "number": 580,
+    "name": "Kushimoto Sk"
+   },
+   "timezone": {
+    "offset": "-3:00",
+    "description": "Brazil, Buenos Aires, Georgetown"
+   },
+   "postcode": 70655,
+   "coordinates": {
+    "latitude": "-22.4463",
+    "longitude": "8.4776"
+   },
+   "state": "Hakkâri"
+  },
+  "id": {
+   "name": "",
+   "value": null
+  },
+  "login": {
+   "sha1": "1b480548c2f76adc40e8b4d174b648d59fdb3e56",
+   "password": "7779311",
+   "salt": "RsclrA1A",
+   "sha256": "e40ee13d8a6f9e546de99aade29e0cba9cb87eea007554ec220e7e61424b8a67",
+   "uuid": "8d464bd4-841d-40a7-8e5f-aae0ba0eddfd",
+   "username": "crazyladybug981",
+   "md5": "1fbb414ecedc54aae4a65942b0f9829f"
+  },
+  "cell": "(007)-614-5756",
+  "email": "ahmet.dagdas@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/men/32.jpg",
+   "large": "https://randomuser.me/api/portraits/men/32.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/men/32.jpg"
+  }
+ },
+ {
+  "nat": "CH",
+  "gender": "male",
+  "phone": "078 680 76 09",
+  "dob": {
+   "date": "1946-06-20T20:03:58.193Z",
+   "age": 77
+  },
+  "name": {
+   "last": "Leroy",
+   "title": "Monsieur",
+   "first": "Basil"
+  },
+  "registered": {
+   "date": "2020-05-25T18:06:31.391Z",
+   "age": 3
+  },
+  "location": {
+   "country": "Switzerland",
+   "city": "Menznau",
+   "street": {
+    "number": 3753,
+    "name": "Rue de L'Abbé-De-L'Épée"
+   },
+   "timezone": {
+    "offset": "+10:00",
+    "description": "Eastern Australia, Guam, Vladivostok"
+   },
+   "postcode": 9610,
+   "coordinates": {
+    "latitude": "61.9229",
+    "longitude": "126.9838"
+   },
+   "state": "Uri"
+  },
+  "id": {
+   "name": "AVS",
+   "value": "756.8468.1318.82"
+  },
+  "login": {
+   "sha1": "347e4a81fda9c3754a08b5a59e3eac09bb409824",
+   "password": "studly",
+   "salt": "ypUZrIrh",
+   "sha256": "d2bf8dd9c28ad5a147c18427ab629632dd21faec5f8f9074388b6c7b28469847",
+   "uuid": "11ffdcbf-1750-4131-b427-90fa42b1201a",
+   "username": "angryostrich545",
+   "md5": "709cd7b8c575a23d674a82081d735fc9"
+  },
+  "cell": "079 898 91 85",
+  "email": "basil.leroy@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/men/33.jpg",
+   "large": "https://randomuser.me/api/portraits/men/33.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/men/33.jpg"
+  }
+ },
+ {
+  "nat": "DK",
+  "gender": "male",
+  "phone": "22707880",
+  "dob": {
+   "date": "1998-09-13T21:20:58.696Z",
+   "age": 25
+  },
+  "name": {
+   "last": "Andersen",
+   "title": "Mr",
+   "first": "Bertram"
+  },
+  "registered": {
+   "date": "2017-05-06T10:11:11.323Z",
+   "age": 6
+  },
+  "location": {
+   "country": "Denmark",
+   "city": "Nykøbing F",
+   "street": {
+    "number": 2584,
+    "name": "Søgade"
+   },
+   "timezone": {
+    "offset": "-7:00",
+    "description": "Mountain Time (US & Canada)"
+   },
+   "postcode": 83828,
+   "coordinates": {
+    "latitude": "26.6319",
+    "longitude": "28.1420"
+   },
+   "state": "Danmark"
+  },
+  "id": {
+   "name": "CPR",
+   "value": "130998-4301"
+  },
+  "login": {
+   "sha1": "851f5e04eaecfd559c20beb312f14bd269af95ba",
+   "password": "heritage",
+   "salt": "57sL0NJq",
+   "sha256": "3516517a7ed6f42763e6e6caeee495f2eb639aa38f2faf3389d802dd21e31f0e",
+   "uuid": "cf5f76f5-64ee-40f3-be74-67ca2aaa9a70",
+   "username": "crazypeacock171",
+   "md5": "67ec8d76debf044269d90e01c7b916fb"
+  },
+  "cell": "19987791",
+  "email": "bertram.andersen@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/men/6.jpg",
+   "large": "https://randomuser.me/api/portraits/men/6.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/men/6.jpg"
+  }
+ },
+ {
+  "nat": "DE",
+  "gender": "male",
+  "phone": "0051-0727132",
+  "dob": {
+   "date": "1958-11-02T23:08:33.151Z",
+   "age": 65
+  },
+  "name": {
+   "last": "Klar",
+   "title": "Mr",
+   "first": "Gottfried"
+  },
+  "registered": {
+   "date": "2003-03-13T20:01:58.812Z",
+   "age": 20
+  },
+  "location": {
+   "country": "Germany",
+   "city": "Frauenstein",
+   "street": {
+    "number": 66,
+    "name": "Gartenweg"
+   },
+   "timezone": {
+    "offset": "+6:00",
+    "description": "Almaty, Dhaka, Colombo"
+   },
+   "postcode": 26172,
+   "coordinates": {
+    "latitude": "30.4548",
+    "longitude": "-93.8240"
+   },
+   "state": "Baden-Württemberg"
+  },
+  "id": {
+   "name": "SVNR",
+   "value": "29 021158 K 167"
+  },
+  "login": {
+   "sha1": "bd10458aa1823c3ec7152712fba6fe35c5ffc89e",
+   "password": "iverson",
+   "salt": "9vAAN1g2",
+   "sha256": "4b3cd412cf8667b70a3c5ba0ce7ed4f1228bf59c469403c5084268fc46273278",
+   "uuid": "8abf4862-8ec2-4151-8877-ad1c4048b8fb",
+   "username": "purplerabbit130",
+   "md5": "e8d1393c2d2ed620653c9134f4e4ff30"
+  },
+  "cell": "0173-9311932",
+  "email": "gottfried.klar@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/men/10.jpg",
+   "large": "https://randomuser.me/api/portraits/men/10.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/men/10.jpg"
+  }
+ },
+ {
+  "nat": "DE",
+  "gender": "male",
+  "phone": "0757-0206704",
+  "dob": {
+   "date": "2001-03-22T07:45:21.534Z",
+   "age": 22
+  },
+  "name": {
+   "last": "Haas",
+   "title": "Mr",
+   "first": "Herwig"
+  },
+  "registered": {
+   "date": "2005-05-03T07:54:34.915Z",
+   "age": 18
+  },
+  "location": {
+   "country": "Germany",
+   "city": "Altlandsberg",
+   "street": {
+    "number": 4884,
+    "name": "Lerchenweg"
+   },
+   "timezone": {
+    "offset": "-8:00",
+    "description": "Pacific Time (US & Canada)"
+   },
+   "postcode": 66774,
+   "coordinates": {
+    "latitude": "70.9546",
+    "longitude": "-173.5306"
+   },
+   "state": "Thüringen"
+  },
+  "id": {
+   "name": "SVNR",
+   "value": "64 2203101 H 061"
+  },
+  "login": {
+   "sha1": "19e8b3b9ae69c842e37ce2945c9203645dcad254",
+   "password": "gohome",
+   "salt": "shQdicfO",
+   "sha256": "4a2cce0fa7151b1f203d0560b6f9fc358ee72671ae26267d6db0a8c46b0613bd",
+   "uuid": "d402024d-81de-4f49-ba94-64c1fb134c0b",
+   "username": "goldenrabbit827",
+   "md5": "1d50ce3aef3add1642c12005815baf48"
+  },
+  "cell": "0173-8763404",
+  "email": "herwig.haas@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/men/82.jpg",
+   "large": "https://randomuser.me/api/portraits/men/82.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/men/82.jpg"
+  }
+ },
+ {
+  "nat": "FR",
+  "gender": "female",
+  "phone": "02-99-09-17-94",
+  "dob": {
+   "date": "1999-06-30T06:59:34.407Z",
+   "age": 24
+  },
+  "name": {
+   "last": "Simon",
+   "title": "Miss",
+   "first": "Justine"
+  },
+  "registered": {
+   "date": "2009-07-14T01:30:38.339Z",
+   "age": 14
+  },
+  "location": {
+   "country": "France",
+   "city": "Besançon",
+   "street": {
+    "number": 3408,
+    "name": "Place de L'Abbé-Franz-Stock"
+   },
+   "timezone": {
+    "offset": "+1:00",
+    "description": "Brussels, Copenhagen, Madrid, Paris"
+   },
+   "postcode": 18000,
+   "coordinates": {
+    "latitude": "63.8986",
+    "longitude": "171.8943"
+   },
+   "state": "Nièvre"
+  },
+  "id": {
+   "name": "INSEE",
+   "value": "2990565640808 41"
+  },
+  "login": {
+   "sha1": "a302e0a4e1312efce858a1b757ab65b21b70d2d3",
+   "password": "farscape",
+   "salt": "fp1JOJX9",
+   "sha256": "6df45e5b7de899d41a88f833e62c2415cf8a1e761480e94ec73ef9ad9f7c0dc4",
+   "uuid": "f4360709-82fe-4cee-86a7-f47532b114d9",
+   "username": "whitekoala442",
+   "md5": "d402d547c91a07f0dc30aa2a18eab00f"
+  },
+  "cell": "06-34-47-61-66",
+  "email": "justine.simon@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/women/40.jpg",
+   "large": "https://randomuser.me/api/portraits/women/40.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/women/40.jpg"
+  }
+ },
+ {
+  "nat": "FI",
+  "gender": "female",
+  "phone": "04-576-537",
+  "dob": {
+   "date": "1992-09-29T16:36:55.905Z",
+   "age": 31
+  },
+  "name": {
+   "last": "Kivela",
+   "title": "Miss",
+   "first": "Kerttu"
+  },
+  "registered": {
+   "date": "2015-07-27T12:40:29.876Z",
+   "age": 8
+  },
+  "location": {
+   "country": "Finland",
+   "city": "Pargas",
+   "street": {
+    "number": 1996,
+    "name": "Rautatienkatu"
+   },
+   "timezone": {
+    "offset": "-9:00",
+    "description": "Alaska"
+   },
+   "postcode": 48307,
+   "coordinates": {
+    "latitude": "-57.8550",
+    "longitude": "138.5531"
+   },
+   "state": "North Karelia"
+  },
+  "id": {
+   "name": "HETU",
+   "value": "NaNNA794undefined"
+  },
+  "login": {
+   "sha1": "41ae6200a80158794218eca758b74c9d072127b7",
+   "password": "niceass",
+   "salt": "PK3XDLIp",
+   "sha256": "6bf22a49aedd6931a7aa7cdf5cf7824cf94d15786119d9825dc29b320b5deaf5",
+   "uuid": "1026605d-7dac-425b-9c34-794c04090999",
+   "username": "purplebird670",
+   "md5": "710ccb4f4f3c4bedbfe2b3c3020448db"
+  },
+  "cell": "044-231-71-21",
+  "email": "kerttu.kivela@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/women/82.jpg",
+   "large": "https://randomuser.me/api/portraits/women/82.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/women/82.jpg"
+  }
+ },
+ {
+  "nat": "US",
+  "gender": "female",
+  "phone": "(866) 425-4417",
+  "dob": {
+   "date": "1998-08-02T04:54:07.004Z",
+   "age": 25
+  },
+  "name": {
+   "last": "Marshall",
+   "title": "Miss",
+   "first": "Kitty"
+  },
+  "registered": {
+   "date": "2004-01-15T06:50:09.967Z",
+   "age": 19
+  },
+  "location": {
+   "country": "United States",
+   "city": "Indianapolis",
+   "street": {
+    "number": 1895,
+    "name": "Royal Ln"
+   },
+   "timezone": {
+    "offset": "+4:30",
+    "description": "Kabul"
+   },
+   "postcode": 44075,
+   "coordinates": {
+    "latitude": "87.5968",
+    "longitude": "-119.4808"
+   },
+   "state": "Nebraska"
+  },
+  "id": {
+   "name": "SSN",
+   "value": "725-30-7508"
+  },
+  "login": {
+   "sha1": "e9f07d092acc25ed473d4161d749db42d82be25b",
+   "password": "tucson",
+   "salt": "hgJW2UEX",
+   "sha256": "b69aac69dcf959b01127b4febb05b0f1ba9d8f2ce8737bea3597b94a866be372",
+   "uuid": "e9d6ae15-1de4-479f-b54f-32876fc5d086",
+   "username": "redbear133",
+   "md5": "4b5c93793a55c6bdeab1271d7ca8c96d"
+  },
+  "cell": "(914) 942-7406",
+  "email": "kitty.marshall@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/women/69.jpg",
+   "large": "https://randomuser.me/api/portraits/women/69.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/women/69.jpg"
+  }
+ },
+ {
+  "nat": "RS",
+  "gender": "male",
+  "phone": "032-1086-368",
+  "dob": {
+   "date": "1979-01-15T16:30:46.198Z",
+   "age": 44
+  },
+  "name": {
+   "last": "Karadžić",
+   "title": "Mr",
+   "first": "Ljubisav"
+  },
+  "registered": {
+   "date": "2003-10-16T14:46:17.592Z",
+   "age": 20
+  },
+  "location": {
+   "country": "Serbia",
+   "city": "Veliko Gradište",
+   "street": {
+    "number": 4497,
+    "name": "Gročićeva"
+   },
+   "timezone": {
+    "offset": "-1:00",
+    "description": "Azores, Cape Verde Islands"
+   },
+   "postcode": 18509,
+   "coordinates": {
+    "latitude": "60.3540",
+    "longitude": "-60.1074"
+   },
+   "state": "Rasina"
+  },
+  "id": {
+   "name": "SID",
+   "value": "651987998"
+  },
+  "login": {
+   "sha1": "8e99dc8ab703498bd61f1d68019ec7d5f99b8bc5",
+   "password": "sting",
+   "salt": "yOlUi5IO",
+   "sha256": "20ce0c89b20e8737f1a1134b85a646a5690875e90823de94addf6dff3fd1a84a",
+   "uuid": "64674eb1-6a3c-42e8-ad50-b912b310da6a",
+   "username": "greenbear767",
+   "md5": "3aa5a75aa143aecfcca0d0bca8685746"
+  },
+  "cell": "069-9224-040",
+  "email": "ljubisav.karadzic@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/men/14.jpg",
+   "large": "https://randomuser.me/api/portraits/men/14.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/men/14.jpg"
+  }
+ },
+ {
+  "nat": "GB",
+  "gender": "female",
+  "phone": "0117202 575 9718",
+  "dob": {
+   "date": "1986-07-11T00:38:42.339Z",
+   "age": 37
+  },
+  "name": {
+   "last": "Ray",
+   "title": "Miss",
+   "first": "Tracy"
+  },
+  "registered": {
+   "date": "2021-12-05T17:23:55.438Z",
+   "age": 2
+  },
+  "location": {
+   "country": "United Kingdom",
+   "city": "Cardiff",
+   "street": {
+    "number": 9596,
+    "name": "Grange Road"
+   },
+   "timezone": {
+    "offset": "-4:00",
+    "description": "Atlantic Time (Canada), Caracas, La Paz"
+   },
+   "postcode": "U72 1YQ",
+   "coordinates": {
+    "latitude": "-18.7409",
+    "longitude": "-64.1506"
+   },
+   "state": "Highlands and Islands"
+  },
+  "id": {
+   "name": "NINO",
+   "value": "HY 16 34 78 C"
+  },
+  "login": {
+   "sha1": "dfd6ddfc2273c103b4b5f2cb6a22c0392b60d15f",
+   "password": "panic",
+   "salt": "z8VvYaGA",
+   "sha256": "4d02e2960d855c00221ce2616996e4e627ecc7ab201f5158ba79f5736761b8cc",
+   "uuid": "ccf2dc8b-031a-4b07-adca-5717b212019f",
+   "username": "brownleopard684",
+   "md5": "48eecb266c7d6d82bffde5a9e8686db6"
+  },
+  "cell": "07065 563877",
+  "email": "tracy.ray@example.com",
+  "picture": {
+   "thumbnail": "https://randomuser.me/api/portraits/thumb/women/25.jpg",
+   "large": "https://randomuser.me/api/portraits/women/25.jpg",
+   "medium": "https://randomuser.me/api/portraits/med/women/25.jpg"
+  }
+ }
+]]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
